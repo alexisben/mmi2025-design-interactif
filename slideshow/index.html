@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slieshow</title>
+    
+    <link rel="stylesheet" href="splide/splide.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Splide js</h1>
+
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img class="slide-image" src="images/a.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img class="slide-image" src="images/b.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img class="slide-image" src="images/c.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="splide/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide = new Splide( '.splide' );
+            splide.mount();
+        } );
+    </script>
+</body>
+</html>
